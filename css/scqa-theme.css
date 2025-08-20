@@ -465,7 +465,8 @@ body {
   font-family: 'roboto', sans-serif;
   font-size: 1.2em;
   font-style: italic;
-  color: #fff;
+  text-wrap: auto,
+    color: #fff;
   text-align: center;
   margin: 15px 0;
   line-height: 1.6;
