@@ -42,12 +42,9 @@
         <!-- Complication -->
         <section class="slide-section">
           <h2 class="section-header">Current Situation</h2>
-          <div></div>
-          <div></div>
-          <div class="section-with-image">
-            <img src="images/tangled-cables-wires.png" alt="tangled wires" />
-          </div>
-          <div class="bullet-point">
+          
+            <div class="sections"> 
+           <div class="bullet-points"><div class="bullet-point">
             Teams struggle with <span class="highlight">rigid systems.</span>
           </div>
           <div class="bullet-point">
@@ -57,17 +54,21 @@
             Merchandisers, Editors and Developers are
             <span class="highlight">frustrated</span> as they want speed,
             creative control and flexibility.
-          </div>
+          </div></div>
+         <div class="section-with-image">
+            <img src="images/tangled-cables-wires.png" alt="tangled wires" />
+          </div></div>
+        
+          
         </section>
       
 
         <!-- Why the Old Way Fails -->
         <section class="slide-section">
           <h2 class="section-header">Why the Old Way Fails?</h2>
-          <div class="section-with-image">
-            <img src="images/merchandiser.png" alt="merchandiser" />
-          </div>
-          <div class="bullet-point">
+           <div class="sections">  
+
+          <div class="bullet-points"> <div class="bullet-point">
             “I don’t even want to use it.” <span class="highlight">— Marriott Merchandiser</span> 
           </div>
           <div class="bullet-point">
@@ -77,25 +78,25 @@
           <div class="bullet-point">
             Editors, merchandisers, and marketers are left
             <span class="highlight">waiting, not creating.</span>
-          </div>
+          </div></div>
+          <div class="section-with-image">
+            <img src="images/merchandiser.png" alt="merchandiser" />
+          </div></div>
+        
         </section>
 
         <!-- Question -->
-        <section>
-                  
-          <section>
-                    
-            <h3 class="section-header">What Do We Really Need?</h3>
-<div class="section-with-image">
-            <img src="images/purple-question.png" alt="Question" />
-          </div>
-            <div class="bullet-point">
+         <section>
+          <section class="slide-section">
+            <h2 class="section-header">What Do We Really Need?</h2>
+             <div class="sections"> 
+              <div class="bullet-points"> <div class="bullet-point">
               How do we move beyond <em>content operations</em> to content being
               the OS that drives <span class="highlight">your enterprise</span>?
             </div>
             <div class="bullet-point">
               How do we empower
-              <span class="highlight">business users</span> to create
+              <span class="highlight">non-technical teams</span> to create
               freely — without bottlenecks?
             </div>
             <div class="bullet-point">
@@ -103,19 +104,25 @@
               <span class="highlight">flexible, resilient, and composable</span>
               — one that evolves with us?
             </div>
+
+          </div>  <div class="section-with-image">
+            <img src="images/question-logo.png" alt="question logo" />
+          </div>
+               </div>
+           
           </section>
 
-          <section>
-            <h3 class="section-header">
+          <section class="slide-section">
+            <h2 class="section-header">
               Sanity v/s Contentstack v/s Contentful
-            </h3>
+            </h2>
             <table>
               <thead>
                 <tr>
-                  <th>Features</th>
-                  <th>Sanity</th>
-                  <th>Contentstack</th>
-                  <th>Contentful</th>
+                  <th> <span class="highlight">Features</span></th>
+                  <th><span class="highlight">Sanity</span></th>
+                  <th><span class="highlight">Contentstack</span></th>
+                  <th><span class="highlight">Contentful</span></th>
                 </tr>
               </thead>
               <tbody>
@@ -125,16 +132,17 @@
                     <ul class="no-padding-list">
                       <li>Open-source Studio</li>
                       <li>Fully customizable UI</li>
-                      <li>Conditional fields</li>
-                      <li>Custom React inputs</li>
+                      <!-- <li>Conditional fields</li> -->
+                      <!-- <li>Custom React inputs</li> -->
                     </ul>
                   </td>
                   <td>
-                    Limited UI customization, no native React component support.
+                      <ul class="no-padding-list"><li>Limited UI customization</li><li>No native React component support</li></ul>
                   </td>
                   <td>
-                    UI-based schema creation, limited extensibility, no
-                    open-source Studio.
+                     <ul class="no-padding-list"><li> UI-based schema creation</li>
+                      <!-- <li>Limited extensibility</li> -->
+                      <li>No open-source Studio</li></ul>
                   </td>
                 </tr>
                 <tr>
@@ -144,91 +152,151 @@
                       <li>Code-based schemas (JS/TS)</li>
                       <li>Git-friendly</li>
                       <li>Nested references</li>
-                      <li>Portable Text</li>
+                      <!-- <li>Portable Text</li> -->
                     </ul>
                   </td>
-                  <td>Form-based, less flexible, harder nesting.</td>
+                  <td><ul class="no-padding-list"><li>No nested references</li><li>Form-based</li><li>Less flexible</li></td></ul></td>
                   <td>
-                    UI-based, easier for non-developers but limited for complex
-                    relationships.
+                    <ul class="no-padding-list">
+                      <li>UI-based schema creation</li>
+                      <li>Easier for non-developers</li>
+                      <li>Limited for complex relationships</li>
+                    </ul>
                   </td>
                 </tr>
                 <tr>
                   <td>Real-Time Collaboration</td>
-                  <td>Built-in live editing & presence indicators.</td>
-                  <td>No real-time editing.</td>
-                  <td>No native real-time editing.</td>
+                  <td><ul class="no-padding-list"><li>Built-in live editing</li></ul></td>
+                  <td><ul class="no-padding-list"><li>No real-time editing.</li></ul></td>
+                  <td><ul class="no-padding-list"><li>No native real-time editing.</li></ul></td>
                 </tr>
                 <tr>
                   <td>Preview</td>
-                  <td>Instant preview updates via webhooks + GROQ.</td>
-                  <td>Slower, rigid preview setup.</td>
-                  <td>Needs extra setup, slower updates.</td>
+                  <td><ul class="no-padding-list"><li>Instant preview updates via webhooks + GROQ.</li></ul></td>
+                  <td><ul class="no-padding-list"><li>Slower and rigid preview setup.</li></ul></td>
+                  <td><ul class="no-padding-list"><li>Needs extra setup</li><li>Slower updates</li></ul></td>
                 </tr>
               </tbody>
             </table>
           </section>
-          <section>
-            <h3 class="section-header">
+          <section class="slide-section">
+            <h2 class="section-header">
               Sanity v/s Contentstack v/s Contentful
-            </h3>
+            </h2>
             <table>
               <thead>
                 <tr>
-                  <th>Features</th>
-                  <th>Sanity</th>
-                  <th>Contentstack</th>
-                  <th>Contentful</th>
+                  <th> <span class="highlight">Features</span></th>
+                  <th><span class="highlight">Sanity</span></th>
+                  <th><span class="highlight">Contentstack</span></th>
+                  <th><span class="highlight">Contentful</span></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>Query Language</td>
                   <td>
-                    GROQ: deeply nested queries in one call, fewer API requests,
-                    real-time API.
+                    <ul class="no-padding-list">
+                      <li>GROQ: deeply nested queries in one call</li>
+                      <!-- <li>Fewer API requests</li> -->
+                      <li>Real-time API</li>
+                    </ul>
                   </td>
                   <td>
-                    REST/GraphQL: multiple calls, auto-generated schema limits.
+                    <ul class="no-padding-list">
+                      <li>REST/GraphQL: multiple calls</li>
+                      <li>Auto-generated schema limits</li>
+                    </ul>
                   </td>
-                  <td>GraphQL/REST only, no real-time updates.</td>
+                  <td>
+                    <ul class="no-padding-list">
+                      <li>GraphQL/REST only</li>
+                      <li>No real-time updates</li>
+                    </ul>
+                  </td>
                 </tr>
                 <tr>
                   <td>Performance</td>
                   <td>
-                    Faster builds (Next.js), optimized payloads, built-in image
-                    CDN transforms.
+                    <ul class="no-padding-list">
+                      <li>Faster builds (Next.js)</li>
+                      <li>Optimized payloads</li>
+                      <!-- <li>Built-in image CDN transforms</li> -->
+                    </ul>
                   </td>
-                  <td>More API calls, manual image optimization.</td>
                   <td>
-                    Performance depends on API setup; image optimization via
-                    third party.
+                    <ul class="no-padding-list">
+                      <li>More API calls</li>
+                      <li>Manual image optimization</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="no-padding-list">
+                      <li>Performance depends on API setup</li>
+                      <li>Image optimization via third party</li>
+                    </ul>
                   </td>
                 </tr>
                 <tr>
                   <td>Local Development & Version Control</td>
-                  <td>Code-first, Git versioning, sanity dev local testing.</td>
-                  <td>UI-driven, limited CLI version control.</td>
-                  <td>No schema versioning in Git; changes via UI only.</td>
+                  <td>
+                    <ul class="no-padding-list">
+                      <li>Git versioning</li>
+                      <li>Sanity dev local testing</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="no-padding-list">
+                      <li>UI-driven</li>
+                      <li>Limited CLI version control</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="no-padding-list">
+                      <li>No schema versioning in Git</li>
+                      <li>Changes via UI only</li>
+                    </ul>
+                  </td>
                 </tr>
                 <tr>
                   <td>AI Integration</td>
-                  <td>Built-in AI Assist (Canvas) in Studio.</td>
-                  <td>No native AI; requires manual setup.</td>
-                  <td>No native AI; external integrations needed.</td>
+                  <td>
+                    <ul class="no-padding-list">
+                      <li>Built-in AI Assist (Canvas) in Studio</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="no-padding-list">
+                      <li>No native AI</li>
+                      <li>Requires manual setup</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="no-padding-list">
+                      <li>No native AI</li>
+                      <li>External integrations needed</li>
+                    </ul>
+                  </td>
                 </tr>
               </tbody>
             </table>
           </section>
 
-          <section>
-            <h2 class="section-header">Why Sanity is best?</h2>
-            <div class="bullet-point">Faster dev cycles</div>
-            <div class="bullet-point">Custom storefront workflows</div>
-            <div class="bullet-point">Real-time team editing</div>
-            <div class="bullet-point">Seamless product data queries</div>
-            <div class="bullet-point">Optimized storefront performance</div>
-            <div class="bullet-point">Scales with business growth</div>
+          <section class="slide-section">
+            <h2 class="section-header">Qualitative Analysis</h2>
+            <div class="sections">  
+              <div class="bullet-points">    
+            <div class="bullet-point"><span class="highlight">Faster </span>dev cycles</div>
+            <div class="bullet-point"><span class="highlight">Custom </span>storefront workflows</div>
+            <div class="bullet-point"><span class="highlight">Real-time </span>team editing</div>
+            <div class="bullet-point"><span class="highlight">Seamless </span>product data queries</div>
+            <div class="bullet-point"><span class="highlight">Optimized </span>storefront performance</div>
+            <div class="bullet-point"><span class="highlight">Scales </span>with business growth</div>
+            </div>
+             <div class="section-with-image">
+            <img src="images/sanity-logo.png" alt="sanity-logo" />
+          </div>
+   </div>
           </section>
         </section>
 
