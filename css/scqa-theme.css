@@ -24,7 +24,12 @@
 
 .sections {
   display: flex;
-  gap: 70px;
+  gap: 30px;
+  /* Reduced gap */
+  height: 100vh;
+  /* Full viewport height */
+  align-items: stretch;
+  /* Make both sections same height */
 }
 
 .bullet-points {
@@ -290,6 +295,6 @@
   position: relative;
 }
 
-.reveal td{
+.reveal td {
   font-size: 70%;
 }
