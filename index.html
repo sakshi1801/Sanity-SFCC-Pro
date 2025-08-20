@@ -464,11 +464,13 @@
   <script src="plugin/highlight/highlight.js"></script>
   <script>
     Reveal.initialize({
-  width: "100%",
-  height: "100%",
-  margin: 0,
-  minScale: 1,
-  maxScale: 1,
+
+  width: 1280,        // wider base
+  height: 720,        // 16:9 ratio, avoids vertical cut
+  margin: 0.05,       // adds some breathing room
+  minScale: 0.2,      // allow shrinking
+  maxScale: 1.2,      // don’t zoom too much
+
 
   hash: true,
   controls: true,
