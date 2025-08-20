@@ -30,6 +30,7 @@ body {
 .reveal .slides section td,
 .reveal .slides section th {
   white-space: nowrap;
+  font-size: clamp(18px, 2vw, 32px);
 }
 
 .display-image {
