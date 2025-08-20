@@ -6,26 +6,47 @@
   gap: 100px;
 }
 
+.reveal .slides {
+  transform: none !important;
+  zoom: 1 !important;
+}
 
-.display-image {
-  display: flex;
-  justify-content: center;   /* centers horizontally */
-  align-items: center;       /* centers vertically inside parent */
-  gap: 20px;                 /* space between images */
-  margin-top: 1.5rem; 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .display-image {
   display: flex;
   justify-content: center;
-  gap: 20px; /* space between images */
+  /* centers horizontally */
+  align-items: center;
+  /* centers vertically inside parent */
+  gap: 20px;
+  /* space between images */
+  margin-top: 1.5rem;
+}
+
+.display-image {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* space between images */
 }
 
 .section-with-puzzle-image img {
-   width: 200px;         /* fixed width */
-  height: 340px;        /* fixed height for rectangle look */
-  object-fit: cover;    /* crop/scale nicely */
-  border-radius: 8px;   /* optional rounded edges */
+  width: 200px;
+  /* fixed width */
+  height: 340px;
+  /* fixed height for rectangle look */
+  object-fit: cover;
+  /* crop/scale nicely */
+  border-radius: 8px;
+  /* optional rounded edges */
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 0.8s forwards;
@@ -36,9 +57,11 @@
 .section-with-puzzle-image:nth-child(1) img {
   animation-delay: 0.3s;
 }
+
 .section-with-puzzle-image:nth-child(2) img {
   animation-delay: 0.6s;
 }
+
 .section-with-puzzle-image:nth-child(3) img {
   animation-delay: 0.9s;
 }
@@ -53,23 +76,31 @@
 
 .display-image {
   display: flex;
-  justify-content: center;   /* centers horizontally */
-  align-items: center;       /* centers vertically inside parent */
-  gap: 20px;                 /* space between images */
-  margin-top: 1.5rem; 
+  justify-content: center;
+  /* centers horizontally */
+  align-items: center;
+  /* centers vertically inside parent */
+  gap: 20px;
+  /* space between images */
+  margin-top: 1.5rem;
 }
 
 .display-image {
   display: flex;
   justify-content: center;
-  gap: 20px; /* space between images */
+  gap: 20px;
+  /* space between images */
 }
 
 .section-with-puzzle-image img {
-   width: 200px;         /* fixed width */
-  height: 340px;        /* fixed height for rectangle look */
-  object-fit: cover;    /* crop/scale nicely */
-  border-radius: 8px;   /* optional rounded edges */
+  width: 200px;
+  /* fixed width */
+  height: 340px;
+  /* fixed height for rectangle look */
+  object-fit: cover;
+  /* crop/scale nicely */
+  border-radius: 8px;
+  /* optional rounded edges */
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 0.8s forwards;
@@ -80,9 +111,11 @@
 .section-with-puzzle-image:nth-child(1) img {
   animation-delay: 0.3s;
 }
+
 .section-with-puzzle-image:nth-child(2) img {
   animation-delay: 0.6s;
 }
+
 .section-with-puzzle-image:nth-child(3) img {
   animation-delay: 0.9s;
 }
@@ -96,11 +129,15 @@
 
 .puzzle {
   display: flex;
-  justify-content: center;  /* centers horizontally */
-  align-items: center;      /* centers vertically */
+  justify-content: center;
+  /* centers horizontally */
+  align-items: center;
+  /* centers vertically */
   display: flex;
-  justify-content: center;  /* centers horizontally */
-  align-items: center;      /* centers vertically */
+  justify-content: center;
+  /* centers horizontally */
+  align-items: center;
+  /* centers vertically */
   font-size: 6em;
   font-weight: bold;
   color: #ffffff;
@@ -125,21 +162,23 @@
 .bullet-points {
   margin-top: 70px;
 }
+
 .section-with-puzzle-image {
   position: relative;
   padding: 20px 0;
   text-align: left;
   height: 300px;
   width: 500px;
-  margin:0 50px 0 50px;
+  margin: 0 50px 0 50px;
 }
+
 .section-with-puzzle-image {
   position: relative;
   padding: 20px 0;
   text-align: left;
   height: 300px;
   width: 500px;
-  margin:0 50px 0 50px;
+  margin: 0 50px 0 50px;
 }
 
 .section-with-image {
@@ -151,11 +190,11 @@
   margin-bottom: 20px;
 }
 
-.section-with-query-image img{
-     text-align: left;
-    height: 400px;
-    width: 600px;
-    margin: 30px 0;
+.section-with-query-image img {
+  text-align: left;
+  height: 400px;
+  width: 600px;
+  margin: 30px 0;
 }
 
 .puzzle-quote {
