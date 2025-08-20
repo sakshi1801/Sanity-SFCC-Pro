@@ -5,18 +5,49 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>reveal.js</title>
   <title>reveal.js</title>
 
+  <link rel="stylesheet" href="dist/reset.css" />
+  <link rel="stylesheet" href="dist/reveal.css" />
+  <link rel="stylesheet" href="dist/theme/black.css" />
   <link rel="stylesheet" href="dist/reset.css" />
   <link rel="stylesheet" href="dist/reveal.css" />
   <link rel="stylesheet" href="dist/theme/black.css" />
 
   <!-- Theme used for syntax highlighted code -->
   <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css" />
 
   <link rel="stylesheet" href="css/scqa-theme.css" />
 </head>
+  <link rel="stylesheet" href="css/scqa-theme.css" />
+</head>
 
+<body>
+  <canvas id="background-canvas"></canvas>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Situation -->
+      <section data-background-image="images/puzzle-background.png">
+        <div class="puzzle">PUZZLE</div>
+        <div class="display-image">
+          <div class="section-with-puzzle-image">
+            <img src="images/puzzle-house.png" alt="puzzle house" />
+          </div>
+          <div class="section-with-puzzle-image">
+            <img src="images/puzzle.png" alt="puzzle" />
+          </div>
+          <div class="section-with-puzzle-image">
+            <img src="images/puzzle-tree.png" alt="puzzle tree" />
+          </div>
+        </div>
+      </section>
 <body>
   <canvas id="background-canvas"></canvas>
   <div class="reveal">
@@ -50,7 +81,52 @@
       </section>
 
 
+      <!-- Complication -->
+      <section class="slide-section slide-current-situation">
+        <div class="situation-container">
+          <!-- Left image column -->
+          <div class="situation-image">
+            <img src="images/tangled-cables-wires.png" alt="tangled wires" />
+          </div>
 
+          <!-- Right text column -->
+          <div class="situation-text">
+            <h2 class="situation-header">Current Situation</h2>
+            <div class="bullet-point">
+              Teams struggle with <span class="highlight">rigid systems.</span>
+            </div>
+            <div class="bullet-point">
+              Businesses need to <span class="highlight">move fast.</span>
+            </div>
+            <div class="bullet-point">
+              Merchandisers, Editors and Developers are
+              <span class="highlight">frustrated</span> as they want speed,
+              creative control and flexibility.
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Why the Old Way Fails -->
+      <section class="slide-section">
+        <h2 class="section-header">Why the Old Way Fails?</h2>
+        <div class="section-with-image">
+          <img src="images/merchandiser.png" alt="merchandiser" />
+        </div>
+        <div class="bullet-point">
+          “I don’t even want to use it.” <span class="highlight">— Marriott Merchandiser</span>
+        </div>
+        <div class="bullet-point">
+          Most CMS platforms promise flexibility but gives you readymade components —
+          <span class="highlight">rigid, restrictive and brand-diluting.</span>
+        </div>
+        <div class="bullet-point">
+          Editors, merchandisers, and marketers are left
+          <span class="highlight">waiting, not creating.</span>
+        </div>
+      </section>
       <!-- Why the Old Way Fails -->
       <section class="slide-section">
         <h2 class="section-header">Why the Old Way Fails?</h2>
@@ -74,31 +150,21 @@
       <section>
         <section class="slide-section">
           <h2 class="section-header">What Do We Really Need?</h2>
-          <div class="sections">
-            <div class="bullet-points">
-              <div class="bullet-point">
-                How do we move beyond <em>content operations</em> to content being
-                the OS that drives <span class="highlight">your enterprise</span>?
-              </div>
-              <div class="bullet-point">
-                How do we empower
-                <span class="highlight">non-technical teams</span> to create
-                freely — without bottlenecks?
-              </div>
-              <div class="bullet-point">
-                How can we create a system that is
-                <span class="highlight">flexible, resilient, and composable</span>
-                — one that evolves with us?
-              </div>
-
-            </div>
-            <div class="section-with-query-image">
-              <img src="images/question-logo.png" alt="question logo" />
-            </div>
+          <div class="bullet-point">
+            How do we move beyond <em>content operations</em> to content being
+            the OS that drives <span class="highlight">your enterprise</span>?
           </div>
-
+          <div class="bullet-point">
+            How do we empower
+            <span class="highlight">non-technical teams</span> to create
+            freely — without bottlenecks?
+          </div>
+          <div class="bullet-point">
+            How can we create a system that is
+            <span class="highlight">flexible, resilient, and composable</span>
+            — one that evolves with us?
+          </div>
         </section>
-
         <section class="slide-section">
           <h2 class="section-header">
             Sanity v/s Contentstack v/s Contentful
@@ -119,8 +185,8 @@
                   <ul class="no-padding-list">
                     <li>Open-source Studio</li>
                     <li>Fully customizable UI</li>
-                    <!-- <li>Conditional fields</li> -->
-                    <!-- <li>Custom React inputs</li> -->
+                    <li>Conditional fields</li>
+                    <li>Custom React inputs</li>
                   </ul>
                 </td>
                 <td>
@@ -132,8 +198,9 @@
                 <td>
                   <ul class="no-padding-list">
                     <li> UI-based schema creation</li>
-                    <!-- <li>Limited extensibility</li> -->
-                    <li>No open-source Studio</li>
+                    <li>Limited extensibility</li>
+                    <li>No
+                      open-source Studio</li>
                   </ul>
                 </td>
               </tr>
@@ -144,7 +211,7 @@
                     <li>Code-based schemas (JS/TS)</li>
                     <li>Git-friendly</li>
                     <li>Nested references</li>
-                    <!-- <li>Portable Text</li> -->
+                    <li>Portable Text</li>
                   </ul>
                 </td>
                 <td>
@@ -152,6 +219,7 @@
                     <li>No nested references</li>
                     <li>Form-based</li>
                     <li>Less flexible</li>
+                    <li>No hard nesting.</li>
                 </td>
                 </ul>
                 </td>
@@ -168,6 +236,7 @@
                 <td>
                   <ul class="no-padding-list">
                     <li>Built-in live editing</li>
+                    <li>Presence indicators</li>
                   </ul>
                 </td>
                 <td>
@@ -222,7 +291,7 @@
                 <td>
                   <ul class="no-padding-list">
                     <li>GROQ: deeply nested queries in one call</li>
-                    <!-- <li>Fewer API requests</li> -->
+                    <li>Fewer API requests</li>
                     <li>Real-time API</li>
                   </ul>
                 </td>
@@ -245,7 +314,7 @@
                   <ul class="no-padding-list">
                     <li>Faster builds (Next.js)</li>
                     <li>Optimized payloads</li>
-                    <!-- <li>Built-in image CDN transforms</li> -->
+                    <li>Built-in image CDN transforms</li>
                   </ul>
                 </td>
                 <td>
@@ -265,6 +334,7 @@
                 <td>Local Development & Version Control</td>
                 <td>
                   <ul class="no-padding-list">
+                    <li>Code-first</li>
                     <li>Git versioning</li>
                     <li>Sanity dev local testing</li>
                   </ul>
@@ -305,22 +375,14 @@
             </tbody>
           </table>
         </section>
-
         <section class="slide-section">
           <h2 class="section-header">Qualitative Analysis</h2>
-          <div class="sections">
-            <div class="bullet-points">
-              <div class="bullet-point"><span class="highlight">Faster </span>dev cycles</div>
-              <div class="bullet-point"><span class="highlight">Custom </span>storefront workflows</div>
-              <div class="bullet-point"><span class="highlight">Real-time </span>team editing</div>
-              <div class="bullet-point"><span class="highlight">Seamless </span>product data queries</div>
-              <div class="bullet-point"><span class="highlight">Optimized </span>storefront performance</div>
-              <div class="bullet-point"><span class="highlight">Scales </span>with business growth</div>
-            </div>
-            <div class="section-with-image">
-              <img src="images/sanity-logo.png" alt="sanity-logo" />
-            </div>
-          </div>
+          <div class="bullet-point"><span class="highlight">Faster </span>dev cycles</div>
+          <div class="bullet-point"><span class="highlight">Custom </span>storefront workflows</div>
+          <div class="bullet-point"><span class="highlight">Real-time </span>team editing</div>
+          <div class="bullet-point"><span class="highlight">Seamless </span>product data queries</div>
+          <div class="bullet-point"><span class="highlight">Optimized </span>storefront performance</div>
+          <div class="bullet-point"><span class="highlight">Scales </span>with business growth</div>
         </section>
       </section>
 
@@ -346,58 +408,44 @@
       <section class="slide-section">
         <h2 class="section-header">Proof in Action</h2>
         <h3><span class="highlight">Dynamic Landing Pages</span></h3>
-        <div class="sections">
-          <div class="bullet-points">
-            <div class="bullet-point">
-              Components become our puzzle pieces.
-            </div>
-            <div class="bullet-point">
-              Merchandisers can rearrange store layouts themselves.
-            </div>
-            <div class="bullet-point">
-              What once took <span class="highlight">10 days</span> is now
-              possible in <span class="highlight">1 day</span>.
-            </div>
-          </div>
-          <div class="section-with-image">
-            <img src="images/sandclock.png" alt="sand clock" />
-          </div>
+        <div class="section-with-image">
+          <img src="images/sandclock.png" alt="sand clock" />
         </div>
+        <div class="bullet-point">Components become our puzzle pieces.</div>
+        <div class="bullet-point">
+          Merchandisers can rearrange store layouts themselves.
+        </div>
+        <div class="bullet-point">
+          What once took <span class="highlight">10 days</span> is now
+          possible in <span class="highlight">1 day</span>.
+        </div>
+
       </section>
 
       <section class="slide-section">
         <h2 class="section-header">Visual Editing with Live Preview</h2>
-        <div class="sections">
-          <div class="section-with-image">
-            <img src="images/smart-mirror.png" alt="smart mirror" />
-          </div>
-          <div class="bullet-points">
-            <div class="bullet-point">
-              Editors can see changes instantly — no guessing, no waiting.
-            </div>
-            <div class="bullet-point">
-              Like
-              <span class="highlight">trying on clothes before buying</span>.
-            </div>
-          </div>
+        <div class="section-with-image">
+          <img src="images/smart-mirror.png" alt="smart mirror" />
+        </div>
+        <div class="bullet-point">
+          Editors can see changes instantly — no guessing, no waiting.
+        </div>
+        <div class="bullet-point">
+          Like <span class="highlight">trying on clothes before buying</span>.
         </div>
       </section>
 
       <section class="slide-section">
         <h2 class="section-header">AI-Powered Content Organization</h2>
-        <div class="sections">
-          <div class="bullet-points">
-            <div class="bullet-point">
-              Drop in messy data, and Sanity organizes it automatically.
-            </div>
-            <div class="bullet-point">
-              <em>"Like hiring an intern who never makes mistakes — and works
-                instantly."</em>
-            </div>
-          </div>
-          <div class="section-with-image">
-            <img src="images/ai-content-org.png" alt="AI Content Organization" />
-          </div>
+        <div class="section-with-image">
+          <img src="images/ai-content-org.png" alt="AI Content Organization" />
+        </div>
+        <div class="bullet-point">
+          Drop in messy data, and Sanity organizes it automatically.
+        </div>
+        <div class="bullet-point">
+          <em>"Like hiring an intern who never makes mistakes — and works
+            instantly."</em>
         </div>
       </section>
 
@@ -422,54 +470,63 @@
         </div>
       </section>
 
-      <section class="slide-section">
-        <h2 class="section-header">Real-Time Bi-Directional Sync</h2>
-        <div class="bullet-point">
-          Any change in Sanity instantly updates SFCC and the live site.
-        </div>
-        <div class="bullet-point">
-          Eliminates manual efforts and
-          <span class="highlight">reduces errors.</span>
-        </div>
-      </section>
+        <section class="slide-section">
+          <h2 class="section-header">Real-Time Bi-Directional Sync</h2>
+          <div class="bullet-point">
+            Any change in Sanity instantly updates SFCC and the live site.
+          </div>
+          <div class="bullet-point">
+            Eliminates manual efforts and
+            <span class="highlight">reduces errors.</span>
+          </div>
+          <div class="section-with-image">
+            <img src="images/bidirectional.png" alt="Bidirectional Sync" />
+          </div>
+        </section>
 
-      <section class="slide-section">
-        <h2 class="section-header">Dedicated Workspaces</h2>
-        <div class="bullet-point">Grouped fields for better navigation.</div>
-        <div class="bullet-point">
-          Dedicated workspaces for
-          <span class="highlight">marketing campaigns</span> and
-          merchandising.
-        </div>
-        <div class="bullet-point">
-          Merchandisers <em>will want</em> to create instead of resisting.
-        </div>
-      </section>
+        <section class="slide-section">
+          <h2 class="section-header">Dedicated Workspaces</h2>
+          <div class="bullet-point">Grouped fields for better navigation.</div>
+          <div class="bullet-point">
+            Dedicated workspaces for
+            <span class="highlight">marketing campaigns</span> and
+            merchandising.
+          </div>
+          <div class="bullet-point">
+            Merchandisers <em>will want</em> to create instead of resisting.
+          </div>
+          <div class="section-with-image">
+            <img src="images/workspace.png" alt="workspace" />
+          </div>
+        </section>
 
-      <!-- Ripple -->
-      <section class="slide-section">
-        <h2 class="section-header">SFCC PRO SUPERPOWERS</h2>
-        <div class="bullet-point">
-          Merchandiser →
-          <span class="highlight">Director of the Storefront</span>
-        </div>
-        <div class="bullet-point">
-          Product Manager →
-          <span class="highlight">Strategist, not Firefighter</span>
-        </div>
-        <div class="bullet-point">
-          Content Director →
-          <span class="highlight">Storyteller, not Ticket Writer</span>
-        </div>
-        <div class="bullet-point">
-          Scrum Master →
-          <span class="highlight">Leader of Meaningful Projects</span>
-        </div>
-        <div class="bullet-point">
-          And I transformed from being the blocker to the builder of
-          possibilities
-        </div>
-      </section>
+        <!-- Ripple -->
+        <section class="slide-section">
+          <h2 class="section-header">SFCC PRO SUPERPOWERS</h2>
+          <div class="bullet-point">
+            Merchandiser →
+            <span class="highlight">Director of the Storefront</span>
+          </div>
+          <div class="bullet-point">
+            Product Manager →
+            <span class="highlight">Strategist, not Firefighter</span>
+          </div>
+          <div class="bullet-point">
+            Content Director →
+            <span class="highlight">Storyteller, not Ticket Writer</span>
+          </div>
+          <div class="bullet-point">
+            Scrum Master →
+            <span class="highlight">Leader of Meaningful Projects</span>
+          </div>
+          <div class="bullet-point">
+            And I transformed from being the blocker to the builder of
+            possibilities
+          </div>
+          <div class="section-with-image">
+            <img src="images/superpowers.png" alt="Superpowers" />
+          </div>
+        </section>
 
       <!-- Closing -->
       <section class="slide-section">
