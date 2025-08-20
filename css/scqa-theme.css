@@ -266,7 +266,6 @@
   position: relative;
 }
 
-reveal td,
-.reveal th {
-  font-size: 50%;
+.reveal td{
+  font-size: 70%;
 }
