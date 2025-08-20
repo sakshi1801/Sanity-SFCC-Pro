@@ -24,11 +24,7 @@ body {
 }
 
 .reveal .slides section,
-.reveal .slides section .bullet-point,
-.reveal .slides section h2,
-.reveal .slides section h3,
-.reveal .slides section td,
-.reveal .slides section th {
+.reveal .slides section .bullet-point {
   white-space: nowrap;
   font-size: clamp(18px, 2vw, 32px);
 }
