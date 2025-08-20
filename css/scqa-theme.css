@@ -23,10 +23,27 @@ body {
   /* Prevents clipping */
 }
 
-.reveal .slides section,
-.reveal .slides section .bullet-point {
+/* Headings: no wrap, but scalable */
+.reveal .slides section h1,
+.reveal .slides section h2,
+.reveal .slides section h3 {
+  white-space: nowrap;
+  font-size: clamp(24px, 3vw, 48px);
+}
+
+/* Bullet points: no wrap, but scalable */
+.reveal .slides section ul li,
+.reveal .slides section ol li {
   white-space: nowrap;
   font-size: clamp(18px, 2vw, 32px);
+}
+
+/* Paragraphs / long text: allow wrapping */
+.reveal .slides section p,
+.reveal .slides section blockquote {
+  white-space: normal;
+  font-size: clamp(18px, 2vw, 28px);
+  line-height: 1.4;
 }
 
 .display-image {
