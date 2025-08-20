@@ -463,19 +463,16 @@
   <script src="plugin/markdown/markdown.js"></script>
   <script src="plugin/highlight/highlight.js"></script>
   <script>
-    Reveal.initialize({
-
- width: "100%",       // use browser width
-  height: "100%",      // use browser height
-  margin: 0.05,        // breathing room
-  minScale: 1,         // don’t shrink
-  maxScale: 1,
-
-
+   Reveal.initialize({
+  width: 1280,        // fixed 16:9
+  height: 720,
+  margin: 0.05,       // breathing room
+  minScale: 0.2,      // allow shrinking for small screens
+  maxScale: 1.0,      // don’t zoom in past base size
   hash: true,
   controls: true,
   plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-    });
+});
   </script>
   <script src="js/custom.js"></script>
 </body>
