@@ -96,22 +96,153 @@
         </section>
 
         <!-- Question -->
-        <section class="slide-section">
-          <h2 class="section-header">What Do We Really Need?</h2>
-          <div class="bullet-point">
-            How do we move beyond <em>content operations</em> to content being
-            the OS that drives <span class="highlight">your enterprise</span>?
-          </div>
-          <div class="bullet-point">
-            How do we empower
-            <span class="highlight">non-technical teams</span> to create freely
-            — without bottlenecks?
-          </div>
-          <div class="bullet-point">
-            How can we create a system that is
-            <span class="highlight">flexible, resilient, and composable</span> —
-            one that evolves with us?
-          </div>
+        <section>
+                  
+          <section>
+                    
+            <h3 class="section-header">What Do We Really Need?</h3>
+
+            <div class="bullet-point">
+              How do we move beyond <em>content operations</em> to content being
+              the OS that drives <span class="highlight">your enterprise</span>?
+            </div>
+            <div class="bullet-point">
+              How do we empower
+              <span class="highlight">non-technical teams</span> to create
+              freely — without bottlenecks?
+            </div>
+            <div class="bullet-point">
+              How can we create a system that is
+              <span class="highlight">flexible, resilient, and composable</span>
+              — one that evolves with us?
+            </div>
+          </section>
+
+          <section>
+            <h3 class="section-header">
+              Sanity v/s Contentstack v/s Contentful
+            </h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Features</th>
+                  <th>Sanity</th>
+                  <th>Contentstack</th>
+                  <th>Contentful</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Developer Experience & Customization</td>
+                  <td>
+                    <ul class="no-padding-list">
+                      <li>Open-source Studio</li>
+                      <li>Fully customizable UI</li>
+                      <li>Conditional fields</li>
+                      <li>Custom React inputs</li>
+                    </ul>
+                  </td>
+                  <td>
+                    Limited UI customization, no native React component support.
+                  </td>
+                  <td>
+                    UI-based schema creation, limited extensibility, no
+                    open-source Studio.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Content Modeling</td>
+                  <td>
+                    <ul class="no-padding-list">
+                      <li>Code-based schemas (JS/TS)</li>
+                      <li>Git-friendly</li>
+                      <li>Nested references</li>
+                      <li>Portable Text</li>
+                    </ul>
+                  </td>
+                  <td>Form-based, less flexible, harder nesting.</td>
+                  <td>
+                    UI-based, easier for non-developers but limited for complex
+                    relationships.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Real-Time Collaboration</td>
+                  <td>Built-in live editing & presence indicators.</td>
+                  <td>No real-time editing.</td>
+                  <td>No native real-time editing.</td>
+                </tr>
+                <tr>
+                  <td>Preview</td>
+                  <td>Instant preview updates via webhooks + GROQ.</td>
+                  <td>Slower, rigid preview setup.</td>
+                  <td>Needs extra setup, slower updates.</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <h3 class="section-header">
+              Sanity v/s Contentstack v/s Contentful
+            </h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Features</th>
+                  <th>Sanity</th>
+                  <th>Contentstack</th>
+                  <th>Contentful</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Query Language</td>
+                  <td>
+                    GROQ: deeply nested queries in one call, fewer API requests,
+                    real-time API.
+                  </td>
+                  <td>
+                    REST/GraphQL: multiple calls, auto-generated schema limits.
+                  </td>
+                  <td>GraphQL/REST only, no real-time updates.</td>
+                </tr>
+                <tr>
+                  <td>Performance</td>
+                  <td>
+                    Faster builds (Next.js), optimized payloads, built-in image
+                    CDN transforms.
+                  </td>
+                  <td>More API calls, manual image optimization.</td>
+                  <td>
+                    Performance depends on API setup; image optimization via
+                    third party.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Local Development & Version Control</td>
+                  <td>Code-first, Git versioning, sanity dev local testing.</td>
+                  <td>UI-driven, limited CLI version control.</td>
+                  <td>No schema versioning in Git; changes via UI only.</td>
+                </tr>
+                <tr>
+                  <td>AI Integration</td>
+                  <td>Built-in AI Assist (Canvas) in Studio.</td>
+                  <td>No native AI; requires manual setup.</td>
+                  <td>No native AI; external integrations needed.</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section>
+            <h2 class="section-header">Why Sanity is best?</h2>
+            <div class="bullet-point">Faster dev cycles</div>
+            <div class="bullet-point">Custom storefront workflows</div>
+            <div class="bullet-point">Real-time team editing</div>
+            <div class="bullet-point">Seamless product data queries</div>
+            <div class="bullet-point">Optimized storefront performance</div>
+            <div class="bullet-point">Scales with business growth</div>
+          </section>
         </section>
 
         <!-- Answer -->
@@ -239,9 +370,9 @@
           </div>
           <div class="content-block">
             <ul class="nested-bullet">
-              <li>→ Freedom to create</li>
-              <li>→ Courage to experiment</li>
-              <li>→ Tools to build the extraordinary</li>
+              <li>Freedom to create</li>
+              <li>Courage to experiment</li>
+              <li>Tools to build the extraordinary</li>
             </ul>
           </div>
           <div class="content-block">

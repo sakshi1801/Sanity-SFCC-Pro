@@ -265,3 +265,8 @@
   line-height: 1.6;
   position: relative;
 }
+
+reveal td,
+.reveal th {
+  font-size: 50%;
+}
