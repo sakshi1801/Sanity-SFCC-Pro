@@ -12,7 +12,15 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
+}
+
+.reveal,
+.reveal .slides {
+  height: 100% !important;
+  width: 100% !important;
+  overflow: visible !important;
+  /* Prevents clipping */
 }
 
 .display-image {
