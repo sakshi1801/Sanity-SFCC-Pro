@@ -23,6 +23,15 @@ body {
   /* Prevents clipping */
 }
 
+.reveal .slides section,
+.reveal .slides section .bullet-point,
+.reveal .slides section h2,
+.reveal .slides section h3,
+.reveal .slides section td,
+.reveal .slides section th {
+  white-space: nowrap;
+}
+
 .display-image {
   display: flex;
   justify-content: center;
