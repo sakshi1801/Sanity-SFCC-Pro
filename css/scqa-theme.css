@@ -1,28 +1,43 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap');
 
+.display-image {
+  display: flex;
+  gap: 100px;
+}
 
 .puzzle {
-    display: block;
-    text-align: center;
-    font-size: 6em; /* Bigger for 3D effect */
+  display: block;
+  text-align: center;
+  font-size: 6em;
+  /* Bigger for 3D effect */
   font-weight: bold;
   color: #ffffff;
   letter-spacing: 0.08em;
 
   /* Multiple shadows to create 3D depth */
-  text-shadow: 
-    2px 2px 0px #b3b3b3,   
-    4px 4px 0px #808080,  
-    6px 6px 0px rgba(230, 26, 234, 0.8);   
+  text-shadow:
+    2px 2px 0px #b3b3b3,
+    4px 4px 0px #808080,
+    6px 6px 0px rgba(230, 26, 234, 0.8);
 }
- 
+
+.sections {
+  display: flex;
+  gap: 70px;
+}
+
+.bullet-points {
+  margin-top: 70px;
+}
+
 .section-with-image {
-    position: relative;
-    padding: 20px 0;
-    text-align: center;
-    height: 300px;
-    margin-bottom: 20px;
+  position: relative;
+  padding: 20px 0;
+  text-align: left;
+  height: 300px;
+  width: 500px;
+  margin-bottom: 20px;
 }
 
 .puzzle-quote {
@@ -37,8 +52,8 @@
   position: relative;
 
   border: 3px solid rgba(237, 244, 244, 0.8);
-  border-radius: 30px 0 30px 0; 
-  background: rgba(0, 0, 0, 0.3); 
+  border-radius: 30px 0 30px 0;
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
   transition: all 0.3s ease;
 }
@@ -46,8 +61,8 @@
 /* Hover effect - stronger neon glow  */
 .puzzle-quote:hover {
   box-shadow: 0 0 15px rgb(255, 0, 225),
-              0 0 35px rgba(239, 10, 223, 0.9),
-              0 0 60px rgba(246, 19, 246, 0.7);
+    0 0 35px rgba(239, 10, 223, 0.9),
+    0 0 60px rgba(246, 19, 246, 0.7);
   transform: scale(1);
 }
 
@@ -58,22 +73,26 @@
   top: -40px;
   left: -40px;
   font-size: 2em;
-  color: #ffffff; /* neon color */
+  color: #ffffff;
+  /* neon color */
 
   animation: puzzle-glow 5s infinite ease-in-out;
 }
 
 @keyframes puzzle-glow {
-  0%, 100% {
-    text-shadow: 
+
+  0%,
+  100% {
+    text-shadow:
       0 0 5px #f1eaf1,
       0 0 15px #e4dee4,
       0 0 30px #e7e2e7,
       0 0 45px #ece8ec;
     transform: scale(1);
   }
+
   50% {
-    text-shadow: 
+    text-shadow:
       0 0 15px #f1eaf1,
       0 0 35px #f1eaf1,
       0 0 60px #e4dee4,
@@ -87,7 +106,8 @@
 .reveal .slides section {
   text-align: left;
   padding: 40px;
-  color: #ffffff; /* ensure readability on dark bg */
+  color: #ffffff;
+  /* ensure readability on dark bg */
   font-family: 'Roboto', sans-serif;
 }
 
@@ -101,8 +121,8 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 0 0 8px rgba(0, 234, 255, 0.9),
-               0 0 20px rgba(0, 234, 255, 0.6),
-               0 0 35px rgba(0, 234, 255, 0.4);
+    0 0 20px rgba(0, 234, 255, 0.6),
+    0 0 35px rgba(0, 234, 255, 0.4);
 }
 
 /* Subheadings */
@@ -143,7 +163,7 @@
   font-size: 1.3em;
   color: #e0e0e0;
   margin-top: 30px;
-  text-shadow: 0 0 5px rgba(255,255,255,0.6);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
 }
 
 /* Title slide */
@@ -155,16 +175,16 @@
   font-family: 'Orbitron', sans-serif;
   font-size: 3.5em;
   color: #00ffcc;
-  text-shadow: 0 0 12px rgba(0,255,204,0.9),
-               0 0 28px rgba(0,255,204,0.7),
-               0 0 45px rgba(0,255,204,0.5);
+  text-shadow: 0 0 12px rgba(0, 255, 204, 0.9),
+    0 0 28px rgba(0, 255, 204, 0.7),
+    0 0 45px rgba(0, 255, 204, 0.5);
 }
 
 .title-slide h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 1.8em;
   color: #ffffff;
-  text-shadow: 0 0 6px rgba(255,255,255,0.6);
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
 }
 
 .theme-badge {
@@ -175,9 +195,9 @@
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  text-shadow: 0 0 8px rgba(255,255,255,0.9);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
   display: inline-block;
-  box-shadow: 0 0 12px rgba(255,0,170,0.8);
+  box-shadow: 0 0 12px rgba(255, 0, 170, 0.8);
 }
 
 /* Fullscreen canvas behind slides */
@@ -187,28 +207,32 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Behind slides */
-  background: #0a0a0f; /* Tech dark background */
+  z-index: -1;
+  /* Behind slides */
+  background: #0a0a0f;
+  /* Tech dark background */
 }
 
 .reveal .controls button {
-    color: rgba(230, 26, 234, 0.8);
-    transition: all 0.3s ease;
+  color: rgba(230, 26, 234, 0.8);
+  transition: all 0.3s ease;
 }
 
 /* Glow on hover */
 .reveal .controls button:hover {
-  color: rgba(255, 0, 255, 1); /* brighter */
+  color: rgba(255, 0, 255, 1);
+  /* brighter */
   text-shadow: 0 0 8px rgba(255, 0, 255, 0.8),
-               0 0 15px rgba(255, 0, 255, 0.6),
-               0 0 25px rgba(255, 0, 255, 0.4);
-  transform: scale(1.15); /* subtle pop effect */
+    0 0 15px rgba(255, 0, 255, 0.6),
+    0 0 25px rgba(255, 0, 255, 0.4);
+  transform: scale(1.15);
+  /* subtle pop effect */
 }
 
 .nested-bullet {
-  margin-left: 30px; 
+  margin-left: 30px;
   padding-left: 20px;
-  list-style: none; 
+  list-style: none;
 }
 
 /* Each item inside nested bullet */
@@ -217,7 +241,7 @@
   font-size: 1.1em;
   color: #ffffff;
   margin: 8px 0;
-  padding-left: 25px; 
+  padding-left: 25px;
 }
 
 /* Apply same baseline to all slides */
@@ -235,22 +259,22 @@
   color: #ffffff;
   margin-bottom: 20px;
   text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(255,255,255,0.6);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
 .content-block {
   width: 100%;
-  max-width: 700px; 
-  min-height: 180px; 
+  max-width: 700px;
+  min-height: 180px;
   margin: 10px auto;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.05); 
+  background: rgba(255, 255, 255, 0.05);
   border: 2px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
   backdrop-filter: blur(6px);
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: #fff;
 }
@@ -260,7 +284,7 @@
   font-size: 1.2em;
   font-style: italic;
   color: #fff;
-  text-align: center;  
+  text-align: center;
   margin: 15px 0;
   line-height: 1.6;
   position: relative;
