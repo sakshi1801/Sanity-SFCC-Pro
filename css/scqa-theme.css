@@ -39,8 +39,7 @@ body {
 }
 
 /* Paragraphs / long text: allow wrapping */
-.reveal .slides section p,
-.reveal .slides section blockquote {
+.reveal .slides section p {
   white-space: normal;
   font-size: clamp(18px, 2vw, 28px);
   line-height: 1.4;
