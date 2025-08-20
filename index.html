@@ -465,6 +465,15 @@
   <script src="plugin/highlight/highlight.js"></script>
   <script>
     Reveal.initialize({
+  // Your existing settings...
+  // Control scaling behavior:
+  minScale: 1,
+  maxScale: 1,
+  // Optional: define a custom presentation size
+  width: 960,
+  height: 700,
+  margin: 0.05,
+
       hash: true,
       control: true,
       plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
