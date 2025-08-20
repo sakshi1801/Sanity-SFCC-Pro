@@ -6,11 +6,6 @@
   gap: 100px;
 }
 
-.reveal .slides {
-  transform: none !important;
-  zoom: 1 !important;
-}
-
 html,
 body {
   margin: 0;
